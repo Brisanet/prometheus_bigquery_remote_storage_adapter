@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prometheus-bigquery-remote-storage-adapter
+  title: prometheus_bigquery_remote_storage_adapter
+  description: "This is a read/write adapter that receives samples via Prometheus's remote write protocol and stores them in Google BigQuery. This adapter is based off code found in the official prometheus repo:"
+  annotations:
+    github.com/project-slug: Brisanet/prometheus_bigquery_remote_storage_adapter
+  tags:
+    - go
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/TODO-DEFINIR
